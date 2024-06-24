@@ -1,38 +1,16 @@
-# ultralight-quick-start
+Test application for Ultralight (HTML/Javascript engine for C++). Not focusing on performance but ease of use.
+Socket communication to send messages between two instances of the applications.
 
-__Clone this repo to try a simple Ultralight app!__
+![](preview.gif?raw=true)
 
-This is a minimal Ultralight app you can use with the [Writing Your First App](https://docs.ultralig.ht/docs/writing-your-first-app) article in the Ultralight documentation.
+## Feed back
 
-## 1. Install the Prerequisites
+Based on WebKit < 13.1 so not compatible with some modern javascript.
+Less practical, not obviously more performant than some other solutions (tauri for exemple)
+    - Interop is not practical
+    - Debugging HTML/Javascript is possible but hard to setup
 
-Before you build and run, you'll need to [install the prerequisites](https://docs.ultralig.ht/docs/installing-prerequisites) for your platform.
+# Links
 
-## 2. Clone and build the app
-
-To clone the repo and build, run the following:
-
-```shell
-git clone https://github.com/ultralight-ux/ultralight-quick-start
-cd ultralight-quick-start
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
-```
-
-> **Note**: _To force CMake to generate 64-bit projects on Windows, use `cmake .. -DCMAKE_GENERATOR_PLATFORM=x64` instead of `cmake ..`_
-
-## 3. Run the app
-
-### On macOS and Linux
-
-Navigate to `ultralight-quick-start/build` and run `MyApp` to launch the program.
-
-### On Windows
-
-Navigate to `ultralight-quick-start/build/Release` and run `MyApp` to launch the program.
-
-## Further Reading
-
-Follow the [Writing Your First App](https://docs.ultralig.ht/docs/writing-your-first-app) guide and other tutorials in the documentation for more info.
+- [Ultralight](https://ultralig.ht/)
+- [Vite](https://vitejs.dev/) + [Svelte](https://svelte.dev/)

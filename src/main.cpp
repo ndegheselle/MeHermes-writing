@@ -1,8 +1,9 @@
 #include "MyApp.h"
 
-int main() {
-  MyApp app;
-  app.Run();
+int main()
+{
+    MyApp app;
+    app.Run();
 
-  return 0;
+    return 0;
 }
